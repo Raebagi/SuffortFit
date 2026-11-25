@@ -92,7 +92,7 @@ erDiagram
 
 관계도에는 주요 속성만 표시했다. 전체 컬럼은 아래 데이터 사전을 기준으로 한다.
 
-## 2. 共通規則
+## 2. 공통규칙
 
 표의 `?`는 NULL 허용, 나머지는 NOT NULL이다. 주키는 region을 제외하고 UUID다. 시각은 timestamptz, 날짜는 date, 금액은 정수 원 단위(bigint), 프로필 값은 타입 검증을 거친 jsonb다. 모든 테이블은 기본적으로 created_at을, 수정 가능한 테이블은 updated_at을 가진다. 아래는 논리 타입이며 varchar 길이는 구현 시 확정한다.
 
